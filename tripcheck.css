@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/*-----------------------------------------------
+ブロックの基底要素
+-----------------------------------------------*/
+* {
+  font-family: "Heebo";
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body * {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.l-container {
+  max-width: 100%;
+  padding: 0 9%;
+}
+
+.p-travelcheck {
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+.p-travelcheck__ttl {
+  text-align: center;
+}
+.p-travelcheck__ttl h1 {
+  font-size: 100%;
+  font-weight: 400;
+  margin-bottom: 1%;
+}
+.p-travelcheck__ttl p {
+  font-size: 50%;
+  font-weight: 100;
+}
+
+.p-travelcheck__wrapper {
+  text-align: center;
+}
+
+input[type=radio] {
+  width: 25px;
+  height: 40px;
+  border-radius: 100px;
+  position: relative;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+input[type=radio]::before,
+input[type=radio]::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+input[type=radio]::before {
+  background-color: #fff;
+  border: 1px solid #c2c1c1;
+  height: 40px;
+  width: 25px;
+  left: 0px;
+}
+
+input[type=radio]::after {
+  background-color: #c2c1c1;
+  opacity: 0;
+  height: 40px;
+  width: 25px;
+  left: 0px;
+}
+
+input[type=radio]:checked::after {
+  opacity: 1;
+}
+
+input[type=bigradio] {
+  width: 30px;
+  height: 45px;
+  border-radius: 100px;
+  position: relative;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+input[type=bigradio]::before,
+input[type=bigradio]::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+input[type=bigradio]::before {
+  background-color: #fff;
+  border: 1px solid #c2c1c1;
+  height: 45px;
+  width: 30px;
+  left: 0px;
+}
+
+input[type=bigradio]::after {
+  background-color: #c2c1c1;
+  opacity: 0;
+  height: 45px;
+  width: 30px;
+  left: 0px;
+}
+
+input[type=bigradio]:checked::after {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=tripcheck.css.map */

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>旅行先診断(仮)</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" type="text/css" href="tripcheck.css" media="all" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function fetchRadioValue() {
+        let selectedRadio1 = document.querySelector('input[name="radio0"]:checked');
+        let selectedRadio2 = document.querySelector('input[name="radio1"]:checked');
+        let selectedRadio3 = document.querySelector('input[name="radio2"]:checked');
+        const sum= selectedRadio1.value-selectedRadio2.value-selectedRadio3.value;
+        
+        if (selectedRadio1&&selectedRadio2&&selectedRadio3) {
+          console.log(sum);
+          if(sum>=0){
+          window.location.href = "http://127.0.0.1:5500/2024hack/tripanswer1.html";
+          }else if(sum>=-2){
+            window.location.href = "http://127.0.0.1:5500/2024hack/tripanswer2.html";
+          }else{
+            window.location.href = "http://127.0.0.1:5500/2024hack/tripanswer3.html";
+          }
+        } else {
+          console.log("ラジオボタンが選ばれていません");
+        }
+      }
+    </script>
+  </head>
+</html>
+
+<body>
+  <script type="text/javascript" src="question.js"></script>
+  <main>
+    <section id="travelcheck" class="p-travelcheck">
+      <div class="p-travelcheck__ttl">
+        <h1>旅行先診断</h1>
+        <p>さっそく占ってみましょう!</p>
+      </div>
+      <div class="p-travelcheck__wrapper">
+        <div class="p-travelcheck__wrapper__card">
+          <p class="p-travelcheck__wrapper__card__question">
+            Q1:お休みの日は家に引きこもっているタイプだ。
+          </p>
+          <form method="get" name="mainForm">
+            <input type="button" id="ans1" value="1" />
+            <input type="button" id="ans2" value="2" />
+            <input type="button" id="ans3" value="3" />
+            <input type="button" id="ans4" value="4" />
+          </form>
+          <form method="get" name="mainForm">
+          <div>
+            <input
+              id="radio01"
+              name="radio0"
+              class="form-input-radio"
+              type="radio"
+              value="1"
+            />
+            <label for="radio01">ラジオ01</label>
+
+            <input
+              id="radio02"
+              name="radio0"
+              class="form-input-radio"
+              type="radio"
+              value="2"
+            />
+            <label for="radio02">ラジオ02</label>
+
+            <input
+              id="radio03"
+              name="radio0"
+              class="form-input-radio"
+              type="radio"
+              value="3"
+            />
+            <label for="radio03">ラジオ03</label>
+
+            <input
+              id="radio04"
+              name="radio0"
+              class="form-input-radio"
+              type="radio"
+              value="4"
+            />
+            <label for="radio04">ラジオ04</label>
+          </div>
+          <div>
+            <input
+              id="radio11"
+              name="radio1"
+              class="form-input-radio"
+              type="radio"
+              value="1"
+            />
+            <label for="radio11">ラジオ11</label>
+
+            <input
+              id="radio12"
+              name="radio1"
+              class="form-input-radio"
+              type="radio"
+              value="2"
+            />
+            <label for="radio12">ラジオ12</label>
+
+            <input
+              id="radio13"
+              name="radio1"
+              class="form-input-radio"
+              type="radio"
+              value="3"
+            />
+            <label for="radio13">ラジオ13</label>
+
+            <input
+              id="radio14"
+              name="radio1"
+              class="form-input-radio"
+              type="radio"
+              value="4"
+            />
+            <label for="radio14">ラジオ14</label>
+          </div>
+          <div>
+            <input
+              id="radio21"
+              name="radio2"
+              class="form-input-radio"
+              type="radio"
+              value="1"
+            />
+            <label for="radio21">ラジオ21</label>
+
+            <input
+              id="radio22"
+              name="radio2"
+              class="form-input-radio"
+              type="radio"
+              value="2"
+            />
+            <label for="radio22">ラジオ22</label>
+
+            <input
+              id="radio23"
+              name="radio2"
+              class="form-input-radio"
+              type="radio"
+              value="3"
+            />
+            <label for="radio23">ラジオ23</label>
+
+            <input
+              id="radio24"
+              name="radio2"
+              class="form-input-radio"
+              type="radio"
+              value="4"
+            />
+            <label for="radio24">ラジオ24</label>
+          </div>
+        </div>
+        
+        <button type="button" id="ans1" onclick="fetchRadioValue()">診断開始</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>

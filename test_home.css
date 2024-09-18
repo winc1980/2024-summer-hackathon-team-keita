@@ -24,7 +24,7 @@ button:hover {
 .background-img {
   background-image: url("img/sky_img.png");
   width: 100%;
-  height: 100vh; /* 画面の高さに合わせる */
+  height: 100%; /* 画面の高さに合わせる */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; /* 画像が縦横比を保ちながら埋められる */
@@ -35,7 +35,7 @@ button:hover {
 .icon_white {
   z-index: +2;
   width: 40px;
-  height: 57px;
+  height: 70px;
 }
 
 .tittle {
@@ -105,6 +105,14 @@ header {
   height: auto;
 }
 
+.simple-button-white__wrapper {
+  padding: 3% 0;
+}
+
+.simple-button-black__wrapper {
+  padding-top: 5%;
+}
+
 .simple-button-black {
   padding: 10px 20px;
   border: 1.5px solid black; /* 白い枠線 */
@@ -118,18 +126,49 @@ header {
   height: auto;
 }
 
+.simple-checkbutton-black__wrapper {
+  padding: 5% 0;
+}
 .main1 h1 {
   text-align: center;
 }
 
+.main1 {
+  margin-top: 5%;
+}
 .main1 p {
   width: 428px;
   height: auto;
   line-height: 2;
 }
 
+.action {
+  position: relative;
+  font-size: 24px;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: fadeInFromBottom 2s forwards;
+}
+
+@keyframes fadeInFromBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-element {
+  opacity: 0;
+  transition: opacity 5s ease-out;
+}
+
+.fade-in-active {
+  opacity: 1;
+}
+
 .calactors {
   display: flex;
+  justify-content: center;
 }
 
 .main1-text-contents h2 {
@@ -145,6 +184,15 @@ header {
 
 .calactors {
   padding-top: 60px;
+  margin: 0 auto;
+}
+
+.question-sectionwrapper {
+  text-align: center;
+}
+
+.question {
+  padding: 2% 0;
 }
 
 .selector-container {
@@ -153,6 +201,8 @@ header {
   justify-content: space-between;
   width: 600px; /* 横幅を広く */
   margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .circle1 {

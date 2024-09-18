@@ -218,3 +218,13 @@ function showResult() {
 document.getElementById("diagnose-btn").addEventListener("click", showResult);
 
 // 2409181635end
+
+window.addEventListener("scroll", function () {
+  const element = document.querySelector(".fade-in-element");
+  const elementPosition = element.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (elementPosition < windowHeight) {
+    element.classList.add("fade-in-active");
+  }
+});

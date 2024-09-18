@@ -25,17 +25,19 @@
         </div>
       </div>
       <!-- header-contentの終了タグ -->
-
+    <div class="action">
       <div class="icon-center">
-          <img class="icon_color" src="img/icon_color.jpg" alt="icon_color" />
+          <img class="icon_color" src="img/icon.png" alt="icon_color" />
       </div>
 
       <div class="header-content2">
         <h1>trip fit.</h1>
         <p>心躍る、あなただけの冒険へ。</p>
+        <div class="simple-button-white__wrapper">
         <button class="simple-button-white">診断する</button>
+        </div>
       </div>
-
+    </div>
 
     </header>
 
@@ -45,13 +47,16 @@
       <h1>trip fit.について</h1>
       <div class="calactors">
         <img  style="width:500px; height:500px;" src="img/calactors.png" alt="calactors" />
-
-        <div class="main1-text-contents">
-          <h2>あなたは何タイプ？</h2>
-          <p>「trip fit.」で、自分にぴったりの旅行スタイルを診断！活動量や興味のあるジャンル（アート、自然、リラクゼーション、グルメ、冒険）から、
-            冒険家型, 文化探求型, リラクゼーション型, グルメ探訪型など4つの旅行タイプに分類。各タイプに合った魅力的な旅行先とプランを提案し、
-            理想の旅を実現します！</p>
-          <button class="simple-button-black">旅行先タイプを見る</button>
+        <div class="fade-in-element">
+          <div class="main1-text-contents">
+            <h2>あなたは何タイプ？</h2>
+            <p>「trip fit.」で、自分にぴったりの旅行スタイルを診断！活動量や興味のあるジャンル（アート、自然、リラクゼーション、グルメ、冒険）から、
+              冒険家型, 文化探求型, リラクゼーション型, グルメ探訪型など4つの旅行タイプに分類。各タイプに合った魅力的な旅行先とプランを提案し、
+              理想の旅を実現します！</p>
+            <div class="simple-button-black__wrapper">
+              <button class="simple-button-black">旅行先タイプを見る</button>
+            </div>
+          </div>
         </div>
         
       </div>
@@ -66,6 +71,7 @@
     <link rel="stylesheet" href="test_home.css">
 </head>
 <body>
+  <div class="question-sectionwrapper">
     <h1>診断テスト</h1>
 
     <section class="question-section">
@@ -278,9 +284,11 @@
           </div>
         </div>
         <!-- 診断要素の最後-->
-        <button class="simple-button-black" id="diagnose-btn">診断する</button>
+        <div class="simple-checkbutton-black__wrapper">
+          <button class="simple-button-black" id="diagnose-btn">診断する</button>
+        </div>
     </section>
-
+  </div>
     <script src="test_home.js"></script>
 </body>
 </html>

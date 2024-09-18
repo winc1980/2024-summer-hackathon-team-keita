@@ -23,18 +23,20 @@ body * {
 }
 
 header {
-  padding: 2% 10%;
+  padding: 0 10%;
   display: flex;
+  background-color: rgba(140, 206, 171);
 }
 header a {
   text-decoration: none;
-  margin-left: 1%;
+  margin-left: 3%;
   font-size: 100%;
   font-weight: 600;
   color: black;
   margin-top: auto;
   margin-bottom: auto;
 }
+
 header img {
   width: 100%;
   height: 100%;
@@ -43,17 +45,17 @@ header img {
   object-fit: cover;
 }
 header div {
-  height: 72px;
-  width: 72px;
+  height: 44px;
+  width: 44px;
+  margin: 1% 0;
 }
 
 .top-section {
-  margin-top: 1%;
   margin-bottom: 8%;
 }
 
 .top-section__collage {
-  height: 250px;
+  height: 400px;
   z-index: 1;
   position: relative;
   align-items: center;
@@ -68,12 +70,12 @@ header div {
 }
 
 .top-section__collage__icon {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 10%);
+  transform: translate(-50%, 30%);
   z-index: 5;
   position: absolute;
 }
@@ -92,7 +94,22 @@ header div {
   padding-top: 5%;
   font-size: 200%;
   font-weight: 600;
+  /*text-decoration-line: underline;
+  text-decoration-color: #07b919;*/
+  display: inline-block;
+  position: relative;
 }
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  border-bottom: 10px solid #8cceab;
+  z-index: -1;
+}
+
 .top-section__textwrapper .top-section__textwrapper__catchphrase {
   font-size: 150%;
   margin-top: 5%;
@@ -131,8 +148,12 @@ header div {
 h2 {
   font-size: 200%;
   font-weight: 900;
-  margin-bottom: 8%;
   text-align: center;
+}
+
+.visitingplacewrapper__flexbox__textbox {
+  width: auto;
+  border: solid 2px #55dfbe;
 }
 
 .planningpage__img-wrapper {
@@ -141,6 +162,9 @@ h2 {
   width: 100%;
   margin-top: 3%;
   margin-bottom: 3%;
+  border-bottom: 2px solid #55dfbe;
+  border-top: 2px solid #55dfbe;
+  padding: 5% 0;
 }
 .planningpage__img-wrapper img {
   width: 24%;
@@ -161,6 +185,7 @@ h2 {
 }
 
 .visitingplace__ttl {
+  margin-top: 10%;
   text-align: center;
   font-size: 250%;
   font-weight: 600;
@@ -185,6 +210,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding-bottom: 7%;
+  width: 90%;
+  margin: 0 auto;
 }
 .visitingplacewrapper__flexbox img {
   width: 100%;
@@ -200,23 +227,38 @@ h2 {
 
 .visitingplacewrapper__flexbox__textbox {
   width: 150%;
-  margin-left: 2%;
+
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding: 2% 0;
 }
 
 .visitingplacewrapper__flexbox__textbox__ttl {
   font-size: 200%;
   font-weight: 600;
-  padding: 4% 0;
 }
 
 .visitingplacewrapper__flexbox__textbox__txt {
   font-size: 90%;
   font-weight: 500;
   max-width: 600px;
+}
+
+.head {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.foot {
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.visitingplace__colorbox {
+  /* background-color: #8cceab; */
+  /*background-color: #d6f3e4;*/
 }
 
 .planningpage {

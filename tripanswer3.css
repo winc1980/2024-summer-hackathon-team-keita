@@ -126,6 +126,38 @@ h1::after {
   place-items: center;
 }
 
+.top-section__action {
+  position: relative;
+  font-size: 24px;
+  opacity: 0; /* 初めは透明に設定 */
+  transform: translateY(100%); /* 下からスライドするために位置を下に設定 */
+  animation: fadeInFromBottom 2s forwards; /* フェードインアニメーションの設定 */
+}
+
+@keyframes fadeInFromBottom {
+  to {
+    opacity: 1; /* アニメーション終了時に完全に表示 */
+    transform: translateY(0); /* アニメーション終了時の位置 */
+  }
+}
+
+@keyframes scroll-anim {
+  from {
+    opacity: 0;
+    scale: 0.6;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.visitingplace__colorbox__action {
+  animation: scroll-anim linear;
+  animation-timeline: view();
+  animation-range: entry 0% contain 20%;
+}
+
 .button {
   text-align: center;
   padding-bottom: 10%;

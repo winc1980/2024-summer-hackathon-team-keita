@@ -1,0 +1,328 @@
+/* body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.sky-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2c9e6a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #19afaf;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* 画像を横幅いっぱいに表示 */
+.background-img {
+  background-image: url("img/sky_img.png");
+  width: 100%;
+  height: 100vh; /* 画面の高さに合わせる */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* 画像が縦横比を保ちながら埋められる */
+}
+
+/* セクションに高さと余白の調整 */
+
+.icon_white {
+  z-index: +2;
+  width: 40px;
+  height: 57px;
+}
+
+.tittle {
+  display: flex;
+  padding-top: 19px;
+  padding-left: 28px;
+  align-items: center; /* 縦方向に中央揃え */
+}
+
+header h2 {
+  color: #fff;
+  margin-left: 20px;
+  align-items: center; /* 縦方向に中央揃え */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-anker {
+  display: flex;
+  font-size: 16px;
+  padding-right: 41px;
+  padding-top: 38px;
+  width: 510px;
+  justify-content: space-between;
+}
+
+header a {
+  color: #ffffff;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+.icon_color {
+  width: 147px;
+  height: 208px;
+}
+
+.icon-center {
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+}
+
+.header-content2 {
+  text-align: center;
+}
+
+.simple-button-white {
+  padding: 10px 20px;
+  border: 1.5px solid white; /* 白い枠線 */
+  background-color: transparent; /* 背景を透明にする */
+  color: white; /* テキストの色を白に */
+  font-size: 16px;
+  border-radius: 5px; /* 角を少し丸める */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* ホバー時のアニメーション */
+  width: 200px;
+  height: auto;
+}
+
+.simple-button-black {
+  padding: 10px 20px;
+  border: 1.5px solid black; /* 白い枠線 */
+  background-color: transparent; /* 背景を透明にする */
+  color: black; /* テキストの色を白に */
+  font-size: 16px;
+  border-radius: 5px; /* 角を少し丸める */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* ホバー時のアニメーション */
+  width: 200px;
+  height: auto;
+}
+
+.main1 h1 {
+  text-align: center;
+}
+
+.main1 p {
+  width: 428px;
+  height: auto;
+  line-height: 2;
+}
+
+.calactors {
+  display: flex;
+}
+
+.main1-text-contents h2 {
+  text-align: center;
+}
+
+.main1-text-contents {
+  padding-left: 90px;
+  padding-top: 50px;
+  height: 500px;
+  justify-content: space-evenly;
+}
+
+.calactors {
+  padding-top: 60px;
+}
+
+/* 2409180928 */
+/* 
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.question p {
+  font-size: 24px; /* フォントサイズを大きく */
+
+/* margin-bottom: 20px;
+  text-align: center;
+} */
+
+.selector-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px; /* 横幅を広く */
+  margin-top: 10px;
+}
+
+.circle1 {
+  width: 80px; /* 円を大きく */
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ccc; /* 初期はグレー */
+  transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+  cursor: pointer;
+}
+
+.circle5 {
+  background-color: #ccc; /* 初期はグレー */
+  transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.circle4 {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc; /* 初期はグレー */
+  transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.circle2 {
+  width: 80px;
+  height: 80px;
+  background-color: #ccc; /* 初期はグレー */
+  transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.circle3 {
+  width: 70px;
+  height: 70px;
+  background-color: #ccc; /* 初期はグレー */
+  transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.circle.selected-mint {
+  background-color: #a8e6cf; /* 明るいミントカラー */
+}
+
+.circle.selected-purple {
+  background-color: #d1c4e9;
+}
+*/
+
+/* 2409180928 end*/
+
+
+.test-section {
+  margin: 0px auto;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2c9e6a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #19afaf;
+}
+
+/* 2409181358 */
+
+
+.circle {
+  border-radius: 50%;
+  background-color: #ccc; 
+  transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+  cursor: pointer;
+}
+
+.circle1,
+.circle5 {
+  width: 80px;
+  height: 80px;
+}
+
+.circle3 {
+  width: 60px;
+  height: 60px;
+}
+
+.circle4,
+.circle2 {
+  width: 70px;
+  height: 70px;
+}
+
+.selected-mint {
+  background-color: #a8e6cf; 
+}
+
+.selected-purple {
+  background-color: #d1c4e9; 
+}
+
+.selected-gray {
+  background-color: #535353; 
+}
+
+/* 2409181358 end */

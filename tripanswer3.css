@@ -40,13 +40,10 @@ header a {
 header img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  vertical-align: bottom;
-  object-fit: cover;
 }
 header div {
   height: 44px;
-  width: 44px;
+  width: 30px;
   margin: 1% 0;
 }
 
@@ -144,7 +141,7 @@ h1::after {
 @keyframes scroll-anim {
   from {
     opacity: 0;
-    scale: 0.6;
+    scale: 0.8;
   }
   to {
     opacity: 1;
@@ -275,7 +272,6 @@ h2 {
 .visitingplacewrapper__flexbox__textbox__txt {
   font-size: 90%;
   font-weight: 500;
-  max-width: 600px;
 }
 
 .head {

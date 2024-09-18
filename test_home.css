@@ -1,32 +1,5 @@
-/* body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-.sky-img {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.question {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-input[type="range"] {
-  width: 100%;
+body {
+  margin: 0px;
 }
 
 button {
@@ -41,9 +14,8 @@ button {
 
 button:hover {
   background-color: #19afaf;
-} */
-
-body {
+}
+*/ body {
   font-family: Arial, sans-serif;
   margin: 0;
 }
@@ -175,26 +147,6 @@ header {
   padding-top: 60px;
 }
 
-/* 2409180928 */
-/* 
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  background-color: #f9f9f9;
-}
-
-.question p {
-  font-size: 24px; /* フォントサイズを大きく */
-
-/* margin-bottom: 20px;
-  text-align: center;
-} */
-
 .selector-container {
   display: flex;
   align-items: center;
@@ -288,10 +240,9 @@ button:hover {
 
 /* 2409181358 */
 
-
 .circle {
   border-radius: 50%;
-  background-color: #ccc; 
+  background-color: #ccc;
   transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
   cursor: pointer;
 }
@@ -314,15 +265,15 @@ button:hover {
 }
 
 .selected-mint {
-  background-color: #a8e6cf; 
+  background-color: #a8e6cf;
 }
 
 .selected-purple {
-  background-color: #d1c4e9; 
+  background-color: #d1c4e9;
 }
 
 .selected-gray {
-  background-color: #535353; 
+  background-color: #535353;
 }
 
 /* 2409181358 end */
